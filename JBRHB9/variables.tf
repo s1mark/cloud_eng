@@ -1,4 +1,4 @@
 variable "file_content" {
-  type = string
+  type        = string
   description = "Hello World!"
 }
