@@ -1,5 +1,7 @@
+
+
 resource "local_file" "local" {
-  content  = "Hello world"
+  content  = var.file_content
   filename = "${path.module}/local.bar"
 }
 
@@ -7,5 +9,5 @@ resource "local_file" "local" {
 resource "local_file" "example" {
   count    = 10
   content  = "This is the content of file ${count.index+1}."
-  filename = "/path/to/file${count.index+1}.txt"
+  filename = "./${count.index+1}.txt"
 }
