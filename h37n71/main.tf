@@ -1,5 +1,5 @@
 resource "local_file" "local" {
-  content  = "Hello world"
+  content  = var.my_var
   filename = "${path.module}/local.bar"
 }
 
