@@ -6,6 +6,6 @@ resource "local_file" "local" {
 
 resource "local_file" "example" {
   count    = 10
-  content  = "This is the content of file ${count.index+1}."
+  content  = "This is the content of file ${count.index}."
   filename = "/path/to/file${count.index}.txt"
 }
