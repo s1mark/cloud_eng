@@ -1,5 +1,5 @@
 module "compute_instance" {
-  source              = "terraform-google-modules/compute_instance/google//modules/compute_instance"
+  source              = "terraform-google-modules/terraform-google-vm/google//modules/compute_instance"
   region              = var.region
   zone                = var.zone
   subnetwork          = var.subnetwork
