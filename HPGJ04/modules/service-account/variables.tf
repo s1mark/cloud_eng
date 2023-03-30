@@ -1,4 +1,4 @@
 variable "project_id" {
-  description = "ekke-cloud"
-  type        = string
+  value = "ekke-cloud"
+  type  = string
 }
