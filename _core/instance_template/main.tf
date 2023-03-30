@@ -18,12 +18,11 @@ variable "access_config" {
 module "instance_template" {
   source = "git::https://github.com/terraform-google-modules/terraform-google-vm/modules/instance_template"
   project_id    = "ekke-cloud"
-  subnetwork                   = ""
+  disk_size_gb = "20"
+  machine_type = "f1-micro"
   stack_type                   = "IPV4_ONLY"
   service_account              = var.service_account
   name_prefix                  = "simple"
-  tags                         = []
-  labels                       = []
   access_config                = [local.access_config]
   enable_nested_virtualization = false
   threads_per_core             = null
