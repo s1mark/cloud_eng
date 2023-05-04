@@ -1,3 +1,3 @@
-module "uzxdo4-action" {
+module "UZXDO4" {
   source = "./uzxdo4"
 }
