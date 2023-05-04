@@ -46,6 +46,7 @@ jobs:
         pwd
         echo $GOOGLE_APPLICATION_CREDENTIALS
         ls -la ~
+        cat ~/auth.json |wc
         cat ~/auth.json
         terraform plan -input=false
 
