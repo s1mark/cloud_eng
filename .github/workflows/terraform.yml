@@ -39,6 +39,7 @@ jobs:
       run: |
         echo "${{ secrets.GCP_SA_KEY }}" > ~/auth.json
         export GOOGLE_APPLICATION_CREDENTIALS=~/auth.json
+        export GOOGLE_CREDENTIALS="${{ secrets.GCP_SA_KEY }}"
         pwd
         echo $GOOGLE_APPLICATION_CREDENTIALS
         ls -la ~
