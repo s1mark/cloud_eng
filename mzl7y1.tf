@@ -3,7 +3,8 @@ module "mzl7y1-pipeline" {
 }
   
 provider "google" {
-  project = "ekke-cloud"
+  credentials = jsondecode(var.gcp_credentials)
+  project     = "ekke-cloud"
 }
 
 data "google_project" "project" {
