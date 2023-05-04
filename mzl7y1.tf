@@ -1,4 +1,4 @@
-module "mzl7y1-pipeline" {
+module "mzl7y1-pipeline3123123123123" {
   source = "./mzl7y1"
 }
   
