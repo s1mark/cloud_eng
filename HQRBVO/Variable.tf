@@ -1,4 +1,4 @@
-variable "File_Content" {
+variable "file_content" {
   type = string
-  default = "hello"
+  default="Hello"
 }
