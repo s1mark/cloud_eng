@@ -1,7 +1,7 @@
-resource "local_file" "file" {
-  content  = var.file
-  filename = "/Users/yslamgulypirgulyyev/Desktop/sample1.txt"
-}
+# resource "local_file" "file" {
+#   content  = var.file
+#   filename = "/Users/yslamgulypirgulyyev/Desktop/sample1.txt"
+# }
 
 
 # resource "google_project_iam_binding" "project" {
