@@ -1,4 +1,5 @@
-resource "local_file" "foo" {
-  content  = "foo!"
-  filename = "${path.module}/foo.bar"
+resource "local_file" "file" {
+  count = 5
+  content  = var.file
+  filename = "C:\\Users\\user\\terraform\\${count.index}.txt" 
 }
