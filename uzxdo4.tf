@@ -1,3 +1,3 @@
 module "UZXDO4" {
-  source = "./uzxdo4"
+  source = "./UZXDO4"
 }
